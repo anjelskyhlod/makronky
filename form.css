@@ -1,0 +1,145 @@
+.form-section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  .form-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    align-self: center;
+    padding: 2.5em;
+    margin: 1em;
+    background-color: #ff8ba0;
+    border-radius: 0.12em;
+  }
+  
+  @media (max-width: 600px) {
+    .form-container {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: 0em;
+      margin-right: 0em;
+    }
+  }
+  
+  .contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-self: center;
+    width: 400px;
+  }
+  
+  @media (max-width: 600px) {
+    .contact-container {
+      width: 100%;
+    }
+  }
+  
+  .custom-box-with-price{
+    display: inline-flex;
+  }
+  
+  .box-container-form{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+  
+    display: flex;
+    flex-wrap: wrap;
+  
+    background-color: rgb(255, 218, 224);
+  }
+  
+  .makronka-container-form{
+    margin: 5px;
+    padding: 5px;
+  
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .makronka-container-form-info{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: min-content;
+    padding: 10px;
+  }
+  
+  .makronka-image-form{
+    width: 100px;
+    height: 50%;
+  }
+  
+  
+
+  .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  
+  .user-box {
+    position: relative;
+  }
+  
+  .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .user-box input:focus ~ label,
+  .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #000000;
+    font-size: 12px;
+  }
+  .user-box input:not(:placeholder-shown):invalid ~ label {
+    top: -20px;
+    left: 0;
+    color: #ff002f;
+    font-size: 12px;
+  }
+  
+  input[type=submit]{
+    width: 50%;
+    height: 50px;
+    align-self: center;
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    background-color: transparent;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+  }
+  
+  input[type=submit]:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+  }
